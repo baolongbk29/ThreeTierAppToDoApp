@@ -7,11 +7,11 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80},{"HTTPS": 443}]'
-    alb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:us-east-2:949638458026:certificate/da10155c-b962-49ad-8dac-d1365d6faea4" 
+    alb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:ap-southeast-1:060271724216:certificate/fe948aa3-edfd-4407-9b25-765547614e23" 
 spec:
   ingressClassName: alb
   rules:
-    - host: ajaycodelab.com
+    - host: finnk8slab.com
       http:
         paths:
           - path: /api
